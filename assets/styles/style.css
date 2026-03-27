@@ -70,6 +70,12 @@ li {
 
 /* HEADER */
 header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  background-color: transparent;
+  backdrop-filter: blur(10px);
   height: 7rem;
   border-bottom: 1px solid var(--border-color);
 }
