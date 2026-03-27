@@ -245,10 +245,19 @@ header {
   color: var(--background-dark-color);
 }
 
+.primary-button:hover {
+  box-shadow: var(--hover-box-shadow);
+}
+
 .secondary-button {
   padding: 1rem 3.2rem;
   border: 2px solid var(--primary-color);
   color: var(--primary-color);
+}
+
+.secondary-button:hover {
+  background-color: var(--primary-color);
+  color: var(--background-dark-color);
 }
 
 .hero-extra-info {
