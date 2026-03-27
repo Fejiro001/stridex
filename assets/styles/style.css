@@ -74,8 +74,8 @@ header {
   top: 0;
   left: 0;
   width: 100%;
-  background-color: transparent;
-  backdrop-filter: blur(10px);
+  background-color: rgba(10, 10, 10, 0.8);
+  backdrop-filter: blur(12px);
   height: 7rem;
   border-bottom: 1px solid var(--border-color);
 }
@@ -185,6 +185,7 @@ header {
     position: absolute;
     top: 7rem;
     left: 0;
+    background-color: var(--background-dark-color);
     border-bottom: 1px solid var(--border-color);
   }
 
