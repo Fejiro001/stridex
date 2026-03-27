@@ -170,6 +170,29 @@ header {
   height: 100%;
 }
 
+.hero-container {
+  color: var(--text-primary-color);
+}
+
+.update-badge {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  width: fit-content;
+  padding: 0.7rem 1.7rem;
+  border-radius: 99px;
+  font-size: var(--badges-size);
+  font-weight: 500;
+  text-transform: uppercase;
+  background-color: rgba(64, 255, 26, 0.1);
+  border: 1px solid var(--primary-color);
+  color: var(--primary-color);
+}
+
+.fa-circle {
+  font-size: 0.8rem;
+}
+
 @media (max-width: 768px) {
   .menu-toggle,
   #mobile-login {
