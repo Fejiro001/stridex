@@ -55,3 +55,143 @@ a,
 button {
   font-family: var(--paragraph-font);
 }
+
+body {
+  background-color: var(--background-dark-color);
+}
+
+a {
+  text-decoration: none;
+}
+
+li {
+  list-style: none;
+}
+
+/* HEADER */
+header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  background-color: rgba(10, 10, 10, 0.8);
+  backdrop-filter: blur(12px);
+  height: 7rem;
+  border-bottom: 1px solid var(--border-color);
+}
+
+.header-container,
+.nav-actions,
+.navigation-list {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 2rem;
+}
+
+.header-container {
+  height: 100%;
+}
+
+.company-name,
+.company-name span,
+.navigation-list a,
+.menu-toggle {
+  transition: var(--transition);
+}
+
+.company-name {
+  font-size: 3.2rem;
+  letter-spacing: 2px;
+  color: var(--text-primary-color);
+}
+
+.company-name span {
+  color: var(--primary-color);
+}
+
+.company-name:hover {
+  color: var(--primary-color);
+
+  span {
+    color: var(--text-primary-color);
+  }
+}
+
+.menu-toggle,
+#mobile-login {
+  display: none;
+}
+
+.menu-toggle {
+  background-color: transparent;
+  color: var(--text-primary-color);
+  font-size: 2.2rem;
+}
+
+.navigation-list {
+  gap: 4rem;
+}
+
+.navigation-list a {
+  color: var(--text-muted-color);
+  text-transform: uppercase;
+  font-weight: 600;
+}
+
+.navigation-list a:hover,
+.menu-toggle:hover,
+.login-button {
+  color: var(--primary-color);
+}
+
+.login-button {
+  background-color: transparent;
+  border: 2px solid var(--primary-color);
+  border-radius: var(--border-radius);
+  transition: var(--transition);
+  padding: 0.5rem 2rem;
+  text-transform: uppercase;
+  font-weight: 600;
+}
+
+.login-button:hover {
+  background-color: var(--primary-color);
+  color: var(--background-dark-color);
+}
+
+@media (max-width: 768px) {
+  .menu-toggle,
+  #mobile-login {
+    display: block;
+  }
+
+  nav,
+  #mobile-login,
+  #mobile-login button {
+    width: 100%;
+  }
+
+  #desktop-login {
+    display: none;
+  }
+
+  .show-nav {
+    display: block;
+  }
+
+  nav {
+    display: none;
+    position: absolute;
+    top: 7rem;
+    left: 0;
+    background-color: var(--background-dark-color);
+    border-bottom: 1px solid var(--border-color);
+  }
+
+  .navigation-list {
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 2.4rem 3.2rem;
+  }
+}
