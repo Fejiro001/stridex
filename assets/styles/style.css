@@ -2,30 +2,30 @@
 
 :root {
   --max-width: 1240px;
-  /* --border-radius: 10px;
-  --section-padding: 8rem;
-  --card-padding: 2.4rem;
-  --grid-gap: 5.6rem;
-  --flex-gap: 8rem;
-  --section-gap: 4rem; */
+  --border-radius: 5px;
+  --section-padding: 10rem;
+  --card-padding: 2rem;
+  --grid-gap: 3.2rem;
 
-  --headings-font: "Space Grotesk", sans-serif;
+  --headings-font: "Bebas Neue", sans-serif;
   --paragraph-font: "Inter", sans-serif;
 
+  --primary-color: #40ff1a;
   --background-dark-color: #0a0a0a;
   --card-background-color: #1a1a1a;
-  --error-color: #ef4444;
-
-  --primary-color: #40ff1a;
-  --accent-color: #40ff1a;
   --text-primary-color: #ffffff;
   --text-muted-color: #b3b3b3;
+  --border-color: #333333;
+  --error-color: #ef4444;
+  --error-accent-color: #f87171;
 
-  /* --hero-title: 5.2rem;
-  --heading-size: 3.2rem;
-  --subheading-size: 2.4rem;
+  --hero-title: 5.2rem;
+  --badges-size: 1.2rem;
+  --heading-size: 4.8rem;
   --paragraph-size: 1.6rem;
-  --muted-text-size: 1.3rem; */
+  --nav-links-size: 1.4rem;
+
+  --hover-box-shadow: 0 0 15px var(--primary-color);
 
   --transition: all 0.25s ease-in-out;
 }
@@ -33,4 +33,25 @@
 .container {
   max-width: min(100% - 30px, var(--max-width));
   margin-inline: auto;
+}
+
+h1,
+h2,
+h3 {
+  font-family: var(--headings-font);
+}
+
+h1 {
+  font-size: var(--heading-size);
+}
+
+p,
+button {
+  font-size: var(--paragraph-size);
+}
+
+p,
+a,
+button {
+  font-family: var(--paragraph-font);
 }
