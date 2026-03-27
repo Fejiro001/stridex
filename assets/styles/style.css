@@ -160,6 +160,16 @@ header {
   color: var(--background-dark-color);
 }
 
+/* HERO SECTION */
+.hero-section {
+  display: grid;
+  place-items: center;
+  background: rgba(10, 10, 10, 0.8) url(../media/images/hero-image.png) no-repeat center/cover;
+  background-blend-mode: multiply;
+  min-height: 90rem;
+  height: 100%;
+}
+
 @media (max-width: 768px) {
   .menu-toggle,
   #mobile-login {
