@@ -172,6 +172,8 @@ header {
 
 .hero-container {
   color: var(--text-primary-color);
+  max-width: 52rem;
+  margin-inline: 1.5rem;
 }
 
 .update-badge,
@@ -209,6 +211,41 @@ header {
 }
 
 .hero-highlight {
+  color: var(--primary-color);
+}
+
+.hero-intro {
+  font-size: 2rem;
+  color: var(--text-muted-color);
+  margin-bottom: 4rem;
+}
+
+.hero-buttons {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 2rem;
+}
+
+.hero-buttons a {
+  display: inline-block;
+}
+
+.primary-button, .secondary-button {
+  border-radius: var(--border-radius);
+  text-transform: uppercase;
+  font-weight: 600;
+}
+
+.primary-button {
+  padding: 1.2rem 3.2rem;
+  background-color: var(--primary-color);
+  color: var(--background-dark-color);
+}
+
+.secondary-button {
+  padding: 1rem 3.2rem;
+  border: 2px solid var(--primary-color);
   color: var(--primary-color);
 }
 
