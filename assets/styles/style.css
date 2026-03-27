@@ -39,6 +39,7 @@ h1,
 h2,
 h3 {
   font-family: var(--headings-font);
+  letter-spacing: 1px;
 }
 
 h1 {
@@ -102,7 +103,6 @@ header {
 
 .company-name {
   font-size: 3.2rem;
-  letter-spacing: 2px;
   color: var(--text-primary-color);
 }
 
@@ -202,7 +202,6 @@ header {
 
 .hero-headline {
   font-size: var(--hero-title);
-  letter-spacing: 2px;
   line-height: var(--hero-title);
 }
 
@@ -225,16 +224,19 @@ header {
   flex-wrap: wrap;
   align-items: center;
   gap: 2rem;
+  margin-bottom: 8rem;
 }
 
 .hero-buttons a {
   display: inline-block;
 }
 
-.primary-button, .secondary-button {
+.primary-button,
+.secondary-button {
   border-radius: var(--border-radius);
   text-transform: uppercase;
   font-weight: 600;
+  transition: var(--transition);
 }
 
 .primary-button {
@@ -247,6 +249,22 @@ header {
   padding: 1rem 3.2rem;
   border: 2px solid var(--primary-color);
   color: var(--primary-color);
+}
+
+.hero-extra-info {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.hero-extra-info h3 {
+  font-size: 3rem;
+  color: var(--primary-color);
+}
+
+.hero-extra-info p {
+  color: var(--text-muted-color);
+  font-size: var(--nav-links-size);
 }
 
 @media (max-width: 768px) {
