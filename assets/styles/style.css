@@ -176,7 +176,12 @@ header {
     display: none;
   }
 
+  .show-nav {
+    display: block;
+  }
+
   nav {
+    display: none;
     position: absolute;
     top: 7rem;
     left: 0;
