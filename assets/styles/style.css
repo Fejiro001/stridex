@@ -74,11 +74,17 @@ header {
   border-bottom: 1px solid var(--border-color);
 }
 
-.header-container {
+.header-container,
+.nav-actions,
+.navigation-list {
   display: flex;
   justify-content: space-between;
   align-items: center;
   gap: 2rem;
+}
+
+.header-container {
+  height: 100%;
 }
 
 .company-name {
@@ -88,5 +94,25 @@ header {
 }
 
 .company-name span {
+  color: var(--primary-color);
+}
+
+.menu-toggle,
+.mobile-login {
+  display: none;
+}
+
+.navigation-list {
+  gap: 4rem;
+}
+
+.navigation-list a {
+  color: var(--text-muted-color);
+  transition: var(--transition);
+  text-transform: uppercase;
+  font-weight: 600;
+}
+
+.navigation-list a:hover {
   color: var(--primary-color);
 }
