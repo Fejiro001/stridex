@@ -93,6 +93,13 @@ header {
   height: 100%;
 }
 
+.company-name,
+.company-name span,
+.navigation-list a,
+.menu-toggle {
+  transition: var(--transition);
+}
+
 .company-name {
   font-size: 3.2rem;
   letter-spacing: 2px;
@@ -103,9 +110,23 @@ header {
   color: var(--primary-color);
 }
 
+.company-name:hover {
+  color: var(--primary-color);
+
+  span {
+    color: var(--text-primary-color);
+  }
+}
+
 .menu-toggle,
 #mobile-login {
   display: none;
+}
+
+.menu-toggle {
+  background-color: transparent;
+  color: var(--text-primary-color);
+  font-size: 2.2rem;
 }
 
 .navigation-list {
@@ -114,23 +135,29 @@ header {
 
 .navigation-list a {
   color: var(--text-muted-color);
-  transition: var(--transition);
   text-transform: uppercase;
   font-weight: 600;
 }
 
-.navigation-list a:hover {
+.navigation-list a:hover,
+.menu-toggle:hover,
+.login-button {
   color: var(--primary-color);
 }
 
 .login-button {
   background-color: transparent;
-  color: var(--primary-color);
   border: 2px solid var(--primary-color);
   border-radius: var(--border-radius);
   transition: var(--transition);
   padding: 0.5rem 2rem;
   text-transform: uppercase;
+  font-weight: 600;
+}
+
+.login-button:hover {
+  background-color: var(--primary-color);
+  color: var(--background-dark-color);
 }
 
 @media (max-width: 768px) {
