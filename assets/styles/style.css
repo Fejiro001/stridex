@@ -55,3 +55,38 @@ a,
 button {
   font-family: var(--paragraph-font);
 }
+
+body {
+  background-color: var(--background-dark-color);
+}
+
+a {
+  text-decoration: none;
+}
+
+li {
+  list-style: none;
+}
+
+/* HEADER */
+header {
+  height: 6rem;
+  border-bottom: 1px solid var(--border-color);
+}
+
+.header-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 2rem;
+}
+
+.company-name {
+  font-size: 3.2rem;
+  letter-spacing: 2px;
+  color: var(--text-primary-color);
+}
+
+.company-name span {
+  color: var(--primary-color);
+}
