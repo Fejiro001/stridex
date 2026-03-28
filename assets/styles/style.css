@@ -348,6 +348,15 @@ i:hover {
 }
 
 
+/* BANNER SECTION */
+.banner-section {
+  font-family: var(--headings-font);
+  font-size: 1.8rem;
+  letter-spacing: 5.4px;
+  background-color: var(--primary-color);
+  overflow: hidden;
+}
+
 @media (max-width: 768px) {
   :root {
     --hero-title: 4.8rem;
