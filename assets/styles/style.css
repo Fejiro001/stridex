@@ -355,8 +355,27 @@ i:hover {
   letter-spacing: 5.4px;
   background-color: var(--primary-color);
   overflow: hidden;
+  white-space: nowrap;
+  padding: 1.2rem 0;
 }
 
+.banner-text {
+  display: inline-flex;
+  animation: scroll-left 30s linear infinite;
+}
+
+.banner-text span {
+  padding-right: 3rem;
+}
+
+.banner-section:hover .banner-text {
+  animation-play-state: paused;
+}
+
+@keyframes scroll-left {
+  0% { transform: translateX(0); }
+  100% { transform: translateX(-50%); }
+}
 @media (max-width: 768px) {
   :root {
     --hero-title: 4.8rem;
