@@ -649,3 +649,15 @@ header {
   color: #ffffff;
 }
 
+.featured-content {
+  display: flex;
+  gap: var(--grid-gap);
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+.featured-image {
+  width: 300px;
+  border-radius: 10px;
+}
+
