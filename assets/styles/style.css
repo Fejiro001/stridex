@@ -661,3 +661,6 @@ header {
   border-radius: 10px;
 }
 
+.featured-text {
+  max-width: 400px;
+}
