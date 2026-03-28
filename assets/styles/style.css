@@ -361,7 +361,7 @@ i:hover {
 
 .banner-text {
   display: inline-flex;
-  animation: scroll-left 30s linear infinite;
+  animation: scroll-left 20s linear infinite;
 }
 
 .banner-text span {
@@ -374,7 +374,7 @@ i:hover {
 
 @keyframes scroll-left {
   0% { transform: translateX(0); }
-  100% { transform: translateX(-50%); }
+  100% { transform: translateX(-20%); }
 }
 @media (max-width: 768px) {
   :root {
