@@ -16,7 +16,7 @@
   --text-primary-color: #ffffff;
   --text-muted-color: #b3b3b3;
   --border-color: #333333;
-  --error-color: #ef4444;
+  --error-color: #b00000;
   --error-accent-color: #f87171;
 
   --hero-title: 9.6rem;
@@ -323,15 +323,16 @@ header {
 }
 
 .shop-container,
-.shop-categories {
+.shop-categories,
+.product-tags {
   display: flex;
   align-items: center;
-  gap: 4rem;
 }
 
 .shop-container {
   flex-direction: column;
   width: 100%;
+  gap: 4rem;
 }
 
 .shop-intro {
@@ -351,6 +352,7 @@ header {
 .shop-categories {
   flex-wrap: wrap;
   justify-content: center;
+  gap: 2rem;
 }
 
 .shop-categories li {
@@ -388,6 +390,42 @@ header {
   grid-template-columns: repeat(3, minmax(0px, 1fr));
   width: 100%;
   gap: var(--grid-gap);
+}
+
+.shop-products .product {
+  background-color: var(--card-background-color);
+  border: 1px solid var(--border-color);
+  border-radius: var(--border-radius);
+  overflow: hidden;
+}
+
+.product-image {
+  position: relative;
+}
+
+.product-tags {
+  position: absolute;
+  top: 10px;
+  left: 10px;
+  gap: 0.8rem;
+}
+
+.product-tags li {
+  padding: 0.5rem 1rem;
+  font-size: var(--badges-size);
+  text-transform: uppercase;
+  font-weight: 600;
+  border-radius: var(--border-radius);
+}
+
+.new-tag {
+  background-color: var(--primary-color);
+  color: var(--background-dark-color);
+}
+
+.sale-tag {
+  background-color: var(--error-color);
+  color: var(--text-primary-color);
 }
 
 @keyframes scroll-left {
