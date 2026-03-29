@@ -397,10 +397,25 @@ header {
   border: 1px solid var(--border-color);
   border-radius: var(--border-radius);
   overflow: hidden;
+  transition: var(--transition);
+}
+
+.shop-products .product:hover {
+  border-color: var(--primary-color);
 }
 
 .product-image {
   position: relative;
+}
+
+.product-link {
+  position: absolute;
+  bottom: 10px;
+  right: 10px;
+  height: 4rem;
+  width: 4rem;
+  border-radius: 99px;
+  background: var(--primary-color) url(../media/images/up-arrow.svg) no-repeat center;
 }
 
 .product-tags {
