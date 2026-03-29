@@ -819,11 +819,6 @@ i:hover {
   flex-wrap: wrap;
 }
 
-.featured-image {
-  width: 300px;
-  border-radius: 10px;
-}
-
 .featured-text {
   max-width: 400px;
 }
