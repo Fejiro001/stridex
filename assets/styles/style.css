@@ -1,7 +1,7 @@
 @import "./reset.css";
 
 :root {
-  --max-width: 1240px;
+  --max-width: 1280px;
   --border-radius: 5px;
   --section-padding: 10rem;
   --card-padding: 2rem;
@@ -388,6 +388,7 @@ i:hover {
 
 .shop-container {
   flex-direction: column;
+  width: 100%;
 }
 
 .shop-intro {
@@ -402,6 +403,11 @@ i:hover {
 .shop-intro p {
   color: var(--text-muted-color);
   font-size: var(--paragraph-size);
+}
+
+.shop-categories {
+  flex-wrap: wrap;
+  justify-content: center;
 }
 
 .shop-categories li {
@@ -432,6 +438,13 @@ i:hover {
 
 #selected-category:hover {
   box-shadow: var(--hover-box-shadow);
+}
+
+.shop-products {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0px, 1fr));
+  width: 100%;
+  gap: var(--grid-gap);
 }
 
 @keyframes scroll-left {
@@ -497,6 +510,16 @@ i:hover {
   justify-content: center;
   }
 
+  /* SHOP SECTION */
+  .shop-products {
+    grid-template-columns: repeat(2, minmax(0px, 1fr));
+  }
+}
+
+@media (max-width: 375px) {
+  .shop-products {
+    grid-template-columns: repeat(1, minmax(0px, 1fr));
+  }
 }
 
 
