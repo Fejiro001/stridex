@@ -660,6 +660,10 @@ header {
   max-width: 400px;
 }
 
+.section-title {
+  color: whitesmoke;
+}
+
 .why .section-title {
   text-align: center;
   font-size: var(--heading-font);
