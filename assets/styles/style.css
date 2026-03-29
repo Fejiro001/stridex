@@ -640,3 +640,15 @@ header {
   font-size: 2rem;
   margin-bottom: 1rem;
 }
+
+.feature-card p {
+  color: var(--text-muted-color);
+  font-size: var(--paragraph-size);
+  line-height: 1.6;
+}
+
+.feature-card:hover {
+  border-color: var(--primary-color);
+  box-shadow: var(--hover-box-shadow);
+  transform: translateY(-6px);
+}
