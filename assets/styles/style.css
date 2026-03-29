@@ -465,16 +465,18 @@ i:hover {
   border-color: var(--primary-color);
 
   .product-image img {
-    transform: scale(1.09);
+    transform: scale(1.07);
   }
 }
 
 .product-image {
   position: relative;
+  overflow: hidden;
 }
 
 .product-link {
   position: absolute;
+  isolation: isolate;
   bottom: 10px;
   right: 10px;
   height: 4rem;
@@ -486,6 +488,7 @@ i:hover {
 
 .product-tags {
   position: absolute;
+  z-index: 2;
   top: 10px;
   left: 10px;
   gap: 0.8rem;
