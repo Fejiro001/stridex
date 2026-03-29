@@ -485,6 +485,37 @@ i:hover {
   color: var(--text-primary-color);
 }
 
+.product-info {
+  padding: 2rem;
+}
+
+.product-category {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  text-transform: uppercase;
+  margin-bottom: 1rem;
+}
+
+.product-category > p,
+.product-rating {
+  font-size: var(--badges-size);
+}
+
+.product-category > p,
+.fa-star {
+  color: var(--primary-color);
+}
+
+.fa-star {
+  margin-right: 0.4rem;
+}
+
+.product-category > span,
+.product-rating span {
+  color: var(--text-muted-color);
+}
+
 @keyframes scroll-left {
   0% {
     transform: translateX(0);
