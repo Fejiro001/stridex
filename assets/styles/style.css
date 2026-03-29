@@ -726,4 +726,9 @@ i:hover {
   max-width: 400px;
 }
 
-
+.why .section-title {
+  text-align: center;
+  font-size: var(--heading-font);
+  color: #ffffff;
+  margin-bottom: 4rem;
+}
