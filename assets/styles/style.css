@@ -454,11 +454,19 @@ i:hover {
   border: 1px solid var(--border-color);
   border-radius: var(--border-radius);
   overflow: hidden;
+}
+
+.shop-products .product,
+.product-image img {
   transition: var(--transition);
 }
 
 .shop-products .product:hover {
   border-color: var(--primary-color);
+
+  .product-image img {
+    transform: scale(1.09);
+  }
 }
 
 .product-image {
