@@ -494,12 +494,16 @@ i:hover {
   align-items: center;
   gap: 1rem;
   text-transform: uppercase;
-  margin-bottom: 1rem;
 }
 
 .product-category > p,
 .product-rating {
   font-size: var(--badges-size);
+}
+
+.product-category,
+.product-name + p {
+  margin-bottom: 1rem;
 }
 
 .product-category > p,
@@ -512,8 +516,30 @@ i:hover {
 }
 
 .product-category > span,
-.product-rating span {
+.product-rating span,
+.product-name + p,
+.slashed-price {
   color: var(--text-muted-color);
+}
+
+.product-name,
+.price-now {
+  color: var(--text-primary-color);
+  font-size: 1.8rem;
+}
+
+.product-name h3 {
+  letter-spacing: 1.5px;
+}
+
+.product-price {
+  font-family: var(--headings-font);
+}
+
+.slashed-price {
+  text-decoration: line-through;
+  margin-left: 1rem;
+  font-size: var(--nav-links-size);
 }
 
 @keyframes scroll-left {
