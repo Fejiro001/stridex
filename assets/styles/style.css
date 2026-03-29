@@ -760,3 +760,15 @@ i:hover {
   box-shadow: var(--hover-box-shadow);
   transform: translateY(-6px);
 }
+
+@media (max-width: 768px) {
+  .why-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (max-width: 480px) {
+  .why-grid {
+    grid-template-columns: 1fr;
+  }
+}
