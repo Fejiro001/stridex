@@ -356,6 +356,11 @@ footer .container {
     font-size: 1.4rem;
   }
 
+  /* FOOTER */
+  footer .container {
+      flex-direction: column;
+      text-align: center;
+  }
 
 }
 
