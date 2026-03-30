@@ -295,7 +295,7 @@ header {
 
 /* FOOTER */
 footer {
-    background-color: var(--card-background-color);
+    background-color: var(--background-dark-color);
     color: var(--text-primary-color);
     padding: 40px 20px;
 }
