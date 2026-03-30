@@ -712,7 +712,7 @@ i:hover {
 }
 
 .featured-content {
-  color: #ffffff;
+  color: --text-primary-color;
 }
 
 .featured-content {
@@ -730,12 +730,36 @@ i:hover {
   color: whitesmoke;
 }
 
-.why .section-title {
+/* WHY SECTION */
+.why {
+  padding: var(--section-padding) 0;
   text-align: center;
-  font-size: var(--heading-font);
-  color: --text-primary-color;
-  margin-bottom: 4rem;
 }
+
+/* TITLE */
+.why .section-title {
+  font-size: var(--heading-size);
+  color: var(--text-primary-color);
+  margin-bottom: 1rem;
+}
+
+.why .section-title span {
+  color: var(--primary-color);
+}
+
+/* SUBTEXT */
+.why p.section-subtitle {
+  color: var(--text-muted-color);
+  margin-bottom: 5rem;
+}
+
+/* GRID */
+.why-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: var(--grid-gap);
+}
+
 
 .feature-card {
   background-color: var(--card-background-color);
