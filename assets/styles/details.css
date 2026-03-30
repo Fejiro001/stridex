@@ -1,1 +1,24 @@
 @import "./reset.css";
+
+.details-container {
+  padding: var(--section-padding) 0;
+}
+
+.back-home {
+  color: var(--text-muted-color);
+  transition: var(--transition);
+}
+
+.back-home:hover {
+  color: var(--primary-color);
+}
+
+.details-product article {
+  display: flex;
+  gap: 6.4rem;
+}
+
+.details-product article div {
+  flex: 1 1 calc(50% - 3.2rem);
+  width: calc(50% - 3.2rem);
+}
