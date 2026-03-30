@@ -732,7 +732,7 @@ i:hover {
 
 /* WHY SECTION */
 .why {
-  padding: var(--section-padding) 0;
+  padding: var(--section-padding) ;
   text-align: center;
 }
 
@@ -743,14 +743,15 @@ i:hover {
   margin-bottom: 1rem;
 }
 
-.why .section-title span {
+.section-title span {
   color: var(--primary-color);
 }
 
-/* SUBTEXT */
-.why p.section-subtitle {
+/* SUBTITLE */
+.section-subtitle {
   color: var(--text-muted-color);
   margin-bottom: 5rem;
+  font-size: var(--paragraph-size);
 }
 
 /* GRID */
@@ -765,10 +766,10 @@ i:hover {
   background-color: var(--card-background-color);
   border: 1px solid var(--border-color);
   border-radius: var(--border-radius);
-  padding: 2.5rem 2rem;
-  text-align: left;
+  padding: 3rem 2rem;
+  text-align: center;
   transition: var(--transition);
-  min-height: 140px; 
+  width: 100%;
 }
 
 .feature-card h3 {
