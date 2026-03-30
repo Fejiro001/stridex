@@ -681,3 +681,8 @@ header {
   min-height: 140px; 
 }
 
+.feature-card h3 {
+  color: var(--text-primary-color);
+  font-size: 2rem;
+  margin-bottom: 1rem;
+}
