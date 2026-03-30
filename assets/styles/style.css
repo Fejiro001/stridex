@@ -336,7 +336,6 @@ footer .container {
 
 .social-apps {
   display: flex;
-  justify-content: center;
   gap: 10px;
 }
 
@@ -399,6 +398,9 @@ i:hover {
   footer .container {
       flex-direction: column;
       text-align: center;
+  }
+  .social-apps {
+  justify-content: center;
   }
 
 }
