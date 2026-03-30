@@ -573,6 +573,49 @@ i:hover {
   font-size: var(--nav-links-size);
 }
 
+/* STATS SECTION */
+.stats-section {
+  background-color: var(--card-background-color);
+}
+
+.stats-list {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 2rem;
+  padding: 4rem 0;
+}
+
+.stat-item {
+  display: grid;
+  place-items: center;
+}
+
+.stat-item i,
+.stat-data {
+  color: var(--primary-color);
+}
+
+.stat-item i {
+  font-size: 2.4rem;
+}
+
+.stat-data {
+  font-family: var(--headings-font);
+  font-size: 3.6rem;
+  letter-spacing: 1.8px;
+}
+
+.stat-data i {
+  font-size: 3.6rem;
+}
+
+.stat-text {
+  color: var(--text-muted-color);
+  font-size: var(--paragraph-size);
+}
+
 @keyframes scroll-left {
   0% {
     transform: translateX(0);
@@ -657,9 +700,16 @@ i:hover {
   .product-tags {
     font-size: 1rem;
   }
+
+  /* STATS SECTION */
+  .stat-item {
+    width: calc(50% - 1.5rem);
+    flex: 1 1 calc(50% - 1.5rem);
+  }
 }
 
 @media (max-width: 480px) {
+  /* SHOP SECTION */
   .shop-products {
     grid-template-columns: repeat(1, minmax(0, 1fr));
   }
