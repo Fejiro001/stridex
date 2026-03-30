@@ -672,6 +672,10 @@ color: var(--text-primary-color);}
   background-color: var(--card-background-color);
 }
 
+.why .container p {
+  text-align: center;
+  color: var(--text-primary-color);
+}
 /* WHY SECTION */
 .featured-content {
   color: --text-primary-color;
