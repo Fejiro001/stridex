@@ -575,6 +575,7 @@ header {
   color: whitesmoke;
 }
 
+/* PHANTOM */
 .at-phantom {
   padding: 80px;
   background-color: #000000;
@@ -588,6 +589,42 @@ header {
   gap: 40px;
 }
 
+.at-phantom__title {
+  font-family: var(--headings-font);
+  font-size: 8rem;
+  line-height: 0.85;
+  margin-bottom: 20px;
+  text-transform: uppercase;
+  color: var(--text-primary-color);
+}
+
+.at-phantom__desc {
+  max-width: 480px;
+  margin-bottom: 40px;
+  color: var(--text-primary-color); 
+}
+
+.at-countdown-label {
+  color: var(--text-primary-color); 
+  text-transform: uppercase;
+  font-weight: 700;
+  font-size: 1.1rem;
+  margin-bottom: 15px;
+  /* display: block; */
+}
+
+.at-timer-grid {
+  /* display: flex; */
+  gap: 15px;
+  margin-bottom: 40px;
+}
+
+.at-timer-column {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 10px;
+}
 /* WHY SECTION */
 .why {
   padding: var(--section-padding) 0;
