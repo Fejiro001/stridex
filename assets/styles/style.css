@@ -710,30 +710,3 @@ i:hover {
     grid-template-columns: repeat(1, minmax(0, 1fr));
   }
 }
-.featured{
-  color:white;
-  
-}
-.featured-content {
-  display: flex;
-  align-items: center;
-  gap: var(--grid-gap);
-  flex-wrap: wrap;
-}
-
-.featured-image {
-  width: 300px;
-  border-radius: 10px;
-}
-
-.featured-text {
-  max-width: 400px;
-}
-
-.price {
-  display: block;
-  margin: 10px;
-  font-weight: bold;
-}
-
-
