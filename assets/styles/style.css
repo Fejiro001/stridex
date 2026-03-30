@@ -291,6 +291,14 @@ header {
   font-size: var(--nav-links-size);
 }
 
+
+
+/* FOOTER */
+footer {
+  color: var(--text-primary-color);
+
+}
+
 @media (max-width: 768px) {
   :root {
     --hero-title: 4.8rem;
