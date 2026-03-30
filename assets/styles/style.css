@@ -307,6 +307,32 @@ footer .container {
     justify-content: space-between;
     gap: 20px;
 }
+/* Footer Columns */
+.footer {
+    flex: 1;
+    min-width: 200px; 
+}
+
+.footer h3 {
+    font-size: 1.3rem;
+    margin-bottom: 15px;
+    color: var(--text-primary-color);
+}
+
+.footer h3 span {
+    color: var(--primary-color);
+}
+
+.footer p {
+    font-size: 0.9rem;
+    color: var(--text-muted-color);
+    margin: 8px 0;
+    cursor: pointer;
+}
+
+.footer p:hover {
+    color: var(--text-primary-color);
+}
 
 
 
