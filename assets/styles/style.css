@@ -485,7 +485,7 @@ header {
   color: var(--primary-color);
 }
 
-.fa-star {
+.product-rating .fa-star {
   margin-right: 0.4rem;
 }
 
