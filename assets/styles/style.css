@@ -575,6 +575,19 @@ header {
   color: whitesmoke;
 }
 
+.at-phantom {
+  padding: 80px;
+  background-color: #000000;
+  color: var(--text-primary-color);
+}
+
+.container-at-phantom {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 40px;
+}
+
 /* WHY SECTION */
 .why {
   padding: var(--section-padding) 0;
