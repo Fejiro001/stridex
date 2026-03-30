@@ -295,9 +295,20 @@ header {
 
 /* FOOTER */
 footer {
-  color: var(--text-primary-color);
-
+    background-color: var(--card-background-color);
+    color: var(--text-primary-color);
+    padding: 40px 20px;
 }
+
+footer .container {
+    margin: 0 auto;
+    display: flex;
+    flex-wrap: wrap; 
+    justify-content: space-between;
+    gap: 20px;
+}
+
+
 
 @media (max-width: 768px) {
   :root {
@@ -344,4 +355,8 @@ footer {
   .secondary-button {
     font-size: 1.4rem;
   }
+
+
 }
+
+
