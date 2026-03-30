@@ -621,7 +621,7 @@ header {
 .why .section-title {
   text-align: center;
   font-size: var(--heading-font);
-  color: #ffffff;
+  color: --text-primary-color;
   margin-bottom: 4rem;
 }
 
@@ -649,14 +649,3 @@ header {
   transform: translateY(-6px);
 }
 
-@media (max-width: 768px) {
-  .why-grid {
-    grid-template-columns: repeat(2, 1fr);
-  }
-}
-
-@media (max-width: 480px) {
-  .why-grid {
-    grid-template-columns: 1fr;
-  }
-}
