@@ -334,6 +334,19 @@ footer .container {
     color: var(--text-primary-color);
 }
 
+.social-apps {
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+}
+
+i {
+  color: var(--text-muted-color);
+}
+
+i:hover {
+  color: var(--text-primary-color);
+}
 
 
 @media (max-width: 768px) {
