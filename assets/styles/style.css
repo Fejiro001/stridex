@@ -607,10 +607,6 @@ i:hover {
   letter-spacing: 1.8px;
 }
 
-.stat-data i {
-  font-size: 3.6rem;
-}
-
 .stat-text {
   color: var(--text-muted-color);
   font-size: var(--paragraph-size);
