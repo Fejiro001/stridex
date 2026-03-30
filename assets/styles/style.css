@@ -726,21 +726,6 @@ i:hover {
   }
 }
 
-/* FOOTER */
-footer {
-    background-color: var(--card-background-color);
-    color: var(--text-primary-color);
-    padding: 40px 20px;
-}
-
-footer .container {
-    margin: 0 auto;
-    display: flex;
-    flex-wrap: wrap; 
-    justify-content: space-between;
-    gap: 20px;
-}
-
 
 
 @media (max-width: 768px) {
