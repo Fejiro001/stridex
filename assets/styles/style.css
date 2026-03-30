@@ -579,15 +579,15 @@ header {
   font-family: var(--headings-font);
   font-size: 8rem;
   line-height: 0.85;
-  margin-bottom: 20px;
+  margin-bottom: 2rem;
   text-transform: uppercase;
-  color: #ffffff;
-}
+color: var(--text-primary-color);}
 
 .at-phantom__desc {
   max-width: 480px;
-  margin-bottom: 40px;
-  color: #cccccc; 
+  font-size: var(--paragraph-size);
+  color: var(--text-muted-color);
+  margin-bottom: 4rem;
 }
 
 .at-countdown-label {
@@ -601,8 +601,8 @@ header {
 
 .at-timer-grid {
   display: flex; 
-  gap: 15px;
-  margin-bottom: 40px;
+  gap: 1.5rem;
+  margin-bottom: 4rem;
 }
 
 .at-timer-column {
@@ -615,12 +615,12 @@ header {
 .at-timer-box {
   width: 70px;
   height: 70px;
-  background: #111111;
-  border: 1px solid #333333;
+  background: var(--card-background-color);
+  border: 1px solid var(--border-color);
   display: flex;
   align-items: center;
   justify-content: center;
-  border-radius: 4px;
+  border-radius: var(--border-radius);
 }
 
 .at-val {
@@ -640,14 +640,12 @@ header {
 .at-phantom__actions {
   display: flex;
   align-items: center;
-  gap: 20px;
+  gap: var(--grid-gap);
 }
 
 .at-stock-info {
-  color: var(--text-primary-color); 
+  color: var(--text-muted-color);
   font-size: 1.3rem;
-  font-weight: 500;
-  opacity: 0.9;
 }
 
 /* Image Size Constraint */
