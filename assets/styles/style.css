@@ -1160,6 +1160,94 @@ box-shadow: var(--hover-box-shadow);
   }
 }
 
+/*login section */
+.login-modal {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  display: none;
+  background: rgba(10, 10, 10, 0.85);
+  justify-content: center;
+  align-items: center;
+  z-index: 10000;
+}
+
+.login-box {
+  background: var(--card-background-color);
+  border: 1px solid var(--border-color);
+  padding: 2rem;
+  width: 320px;
+  border-radius: var(--border-radius);
+  color: var(--text-primary-color);
+  position: relative;
+  text-align: left;
+}
+
+#closeBtn {
+  position: absolute;
+  top: 10px;
+  right: 15px;
+  font-size: 2rem;
+  color: var(--text-muted-color);
+  cursor: pointer;
+  transition: var(--transition);
+  display: none;
+}
+
+#closeBtn:hover {
+  color: var(--primary-color);
+}
+
+/* Heading */
+.login-box h2 {
+  margin-bottom: 0.5rem;
+  color: var(--primary-color);
+  text-align: center;
+}
+
+.login-box p {
+  font-size: var(--nav-links-size);
+  color: var(--text-muted-color);
+  margin-bottom: 1.5rem;
+  text-align: center;
+}
+
+/* Inputs */
+.login-box input {
+  width: 100%;
+  padding: 1rem;
+  margin-bottom: 1rem;
+  border-radius: var(--border-radius);
+  border: 1px solid var(--border-color);
+  background: var(--background-dark-color);
+  color: var(--text-primary-color);
+  transition: var(--transition);
+}
+
+.login-box input:focus {
+  border-color: var(--primary-color);
+  box-shadow: 10px var(--primary-color);
+}
+
+.login-btn {
+  width: 100%;
+  padding: 1rem;
+  background: var(--primary-color);
+  border: none;
+  border-radius: var(--border-radius);
+  color: var(--background-dark-color);
+  font-weight: 600;
+  cursor: pointer;
+  transition: var(--transition);
+}
+
+.login-btn:hover {
+  box-shadow: var(--hover-box-shadow);
+}
+
+
 @media (max-width: 480px) {
   /* SHOP SECTION */
   .shop-products {
@@ -1171,3 +1259,5 @@ box-shadow: var(--hover-box-shadow);
     grid-template-columns: repeat(1, minmax(0, 1fr));
   }
 }
+
+

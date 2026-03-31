@@ -36,4 +36,36 @@ allProducts.forEach((productList) => {
     }
   });
 });
+const modal = document.getElementById("loginModal");
+const loginBtns = document.querySelectorAll(".login-button"); 
+const signinLink = document.querySelector(".login-btn");
+const signupLink = document.querySelector(".signup-link");
 
+loginBtns.forEach(btn => {
+  btn.addEventListener("click", (e) => {
+    e.preventDefault();
+    modal.style.display = "flex";
+  });
+});
+
+if (signupLink) {
+  signupLink.onclick = function() {
+    console.log("Sign up clicked! Closing modal..."); 
+    modal.style.display = "none";
+    document.body.style.overflow = "auto";
+  };
+}
+if (signinLink) {
+  signinLink.onclick = function() {
+    console.log("Sign in clicked! Closing modal..."); 
+    modal.style.display = "none";
+    document.body.style.overflow = "auto";
+  };
+}
+
+window.onclick = function(e) {
+  if (e.target === modal) {
+    modal.style.display = "none";
+    document.body.style.overflow = "auto";
+  }
+};
