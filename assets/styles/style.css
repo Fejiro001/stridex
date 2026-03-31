@@ -1052,7 +1052,11 @@ color: var(--text-muted-color);
 font-size: 0.9em;
 margin: 0;
 }
-
+.testimonial-card:hover {
+transform: translateY(-10px); 
+border-color: var(--primary-color);
+box-shadow: var(--hover-box-shadow);
+}
 
 
 @keyframes scroll-left {
