@@ -1036,6 +1036,22 @@ box-shadow: 0 4px 8px rgba(0,0,0,0.1);
 max-width: 300px;
 transition: all 0.3s ease-in-out;
 }      
+.testimonial-quote {
+font-style: italic;
+color: var(--text-muted-color);
+margin-bottom: 15px;
+}      
+.testimonial-name {
+font-weight: bold;
+color: var(--text-primary-color);
+margin: 0;
+margin-bottom: 5px;
+}      
+.testimonial-title {
+color: var(--text-muted-color);
+font-size: 0.9em;
+margin: 0;
+}
 
 
 
