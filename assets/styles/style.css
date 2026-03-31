@@ -1021,13 +1021,17 @@ margin-left: 7px;
 
 
 /* TESTIMONIALS */
-.testimonial-section {
+.testimonial-section, .testimonial-card-container {
 display: flex;
 justify-content: center;
 gap: 20px; 
 flex-wrap: wrap; 
-background-color: var(--border-color);
+background-color: var(--card-background-color);
 }      
+.testimonial-section>div {
+  width: 95%;
+}
+
 .testimonial-card {
 background: var(--background-dark-color);
 padding: 30px;
