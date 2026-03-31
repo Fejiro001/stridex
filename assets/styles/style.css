@@ -761,6 +761,9 @@ color: var(--text-muted-color);
 margin-bottom: 30px;
 }
 
+.early-access h2 {
+  font-size: 4.5rem;
+}
 .early-form {
 display: flex;
 gap: 10px;
