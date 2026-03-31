@@ -50,14 +50,14 @@ loginBtns.forEach(btn => {
 
 if (signupLink) {
   signupLink.onclick = function() {
-    console.log("Sign up clicked! Closing modal..."); // This shows in F12 console
+    console.log("Sign up clicked! Closing modal..."); 
     modal.style.display = "none";
     document.body.style.overflow = "auto";
   };
 }
 if (signinLink) {
   signinLink.onclick = function() {
-    console.log("Sign in clicked! Closing modal..."); // This shows in F12 console
+    console.log("Sign in clicked! Closing modal..."); 
     modal.style.display = "none";
     document.body.style.overflow = "auto";
   };
