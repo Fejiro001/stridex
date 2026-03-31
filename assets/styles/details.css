@@ -20,12 +20,13 @@
 
 .details-product article {
   display: flex;
+  /* flex-wrap: wrap; */
   gap: 6.4rem;
 }
 
 .details-product article div {
-  flex: 1 1 calc(50% - 3.2rem);
-  width: calc(50% - 3.2rem);
+  /* flex: 1 1 calc(50% - 3.2rem); */
+  width: 100%;
 }
 
 .details-image {
@@ -102,9 +103,95 @@
 
 .description {
   color: var(--text-muted-color);
+  padding: 3.2rem 0;
+}
+
+.size-selection h3 {
+  color: var(--text-primary-color);
+  font-family: var(--headings-font);
+  margin-bottom: 1.2rem;
+}
+
+.size-options {
+  display: grid;
+  grid-template-columns: repeat(6, minmax(0, 1fr));
+  gap: 1rem;
+}
+
+.size-option {
+  border: 1px solid var(--border-color);
+  border-radius: var(--border-radius);
+  background-color: var(--card-background-color);
+  color: var(--text-muted-color);
+  padding: 1.2rem 0;
+  text-align: center;
+  cursor: pointer;
+}
+
+.details-buttons {
+  display: flex;
+  gap: 1rem;
+  padding: 3.2rem 0;
+}
+
+.details-buttons button {
+  display: inline;
+}
+
+.add-to-cart-button {
+  width: 100%;
+}
+
+.wishlist-button {
+  border: 1px solid var(--border-color);
+  background-color: transparent;
+  color: var(--text-muted-color);
+  padding: 1.4rem 2.8rem;
+  border-radius: var(--border-radius);
+  font-size: 2rem;
+}
+
+.wishlist-button,
+.size-option {
+  transition: var(--transition);
+}
+
+.size-option:hover,
+.wishlist-button:hover {
+  color: var(--primary-color);
+  border-color: var(--primary-color);
+}
+
+hr {
+  border-color: var(--border-color);
+}
+
+.purchase-benefits {
+  display: flex;
+  justify-content: space-between;
+  padding-top: 2.5rem;
+  text-align: center;
+}
+
+.purchase-benefits i {
+  color: var(--primary-color);
+}
+
+.benefit-title {
+  color: var(--text-primary-color);
+  font-size: 1.2rem;
+}
+
+.benefit-description {
+  color: var(--text-muted-color);
+  font-size: 1rem;
 }
 
 @media (max-width: 768px) {
+  .details-product article {
+    flex-direction: column;
+  }
+
   .product-tags {
     font-size: 1rem;
   }
