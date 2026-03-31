@@ -919,6 +919,16 @@ outline: none;
 border-color: var(--primary-color);
 color: var(--text-primary-color);
 }
+.form-button {
+width: 100%;
+padding: 15px;
+background-color: var(--primary-color);
+border: none;
+border-radius: 10px;
+cursor: pointer;
+font-size: 1.5rem;
+font-weight: 600;
+}
 
 
 
