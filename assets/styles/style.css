@@ -576,11 +576,9 @@ header {
 }
 
 /* FEATURED SECTION */
-
 .at-phantom {
   padding: 80px;
   background-color: #000000;
-  color: var(--text-primary-color);
 }
 
 .container-at-phantom {
@@ -602,15 +600,8 @@ header {
 .at-phantom__desc {
   max-width: 480px;
   margin-bottom: 40px;
-  color: var(--text-primary-color); 
-  text-transform: uppercase;
-color: var(--text-primary-color);}
-
-.at-phantom__desc {
-  max-width: 480px;
+  color: var(--text-muted-color); 
   font-size: var(--paragraph-size);
-  color: var(--text-muted-color);
-  margin-bottom: 4rem;
 }
 
 .at-countdown-label {
