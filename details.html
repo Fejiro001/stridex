@@ -141,10 +141,11 @@
       <section class="info-section">
         <div class="container">
           <nav>
-            <button class="active">Features</button> <button>Specs</button>
-            <button>Reviews</button>
+            <button class="tab-button active" data-tab="tab1">Features</button>
+            <button class="tab-button" data-tab="tab2">Specs</button>
+            <button class="tab-button" data-tab="tab3">Reviews</button>
           </nav>
-          <ul class="features-list">
+          <ul class="features-list" id="tab1">
             <li>NeonFlex™ energy-return midsole with 65% energy return rate</li>
             <li>Full-length carbon fiber propulsion plate</li>
             <li>Recycled materials — 40% post-consumer waste</li>
@@ -152,7 +153,7 @@
             <li>Glow-in-the-dark outsole for night visibility</li>
             <li>Reflective heel counter for 360° visibility</li>
           </ul>
-          <ul class="specs-list">
+          <ul class="specs-list" id="tab2">
             <li><span>weight</span><span>198g</span></li>
             <li><span>drop</span><span>8mm</span></li>
             <li><span>cushioning</span><span>NeonFlex&trade; Foam</span></li>
@@ -160,7 +161,7 @@
             <li><span>outsole</span><span>Carbon Rubber</span></li>
             <li><span>plate</span><span>Full-length Carbon Fiber</span></li>
           </ul>
-          <ul class="reviews-list">
+          <ul class="reviews-list" id="tab3">
             <li>
               <div class="review-header">
                 <div class="user-info">
