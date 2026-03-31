@@ -884,6 +884,24 @@ max-width: 300px;
 }
 
 /* CONTACT */
+.contact-section {
+  place-items:center;
+  text-align: center;
+  color: var(--text-primary-color);
+}
+h4{
+  color: gray;
+}
+.form-container {
+  padding: 30px;
+  max-width: 500px;
+  width: 80%;
+  margin: 20px auto;
+  transition: transform 0.3s ease-in-out;
+}
+
+
+
 
 
 
