@@ -715,11 +715,6 @@ header {
   color: var(--text-primary-color);
 }
 
-.at-story__container {
-  max-width: 1000px; 
-  margin-inline: auto;
-}
-
 .at-story__header {
   margin-bottom: 4rem;
 }
