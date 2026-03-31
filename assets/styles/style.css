@@ -1027,9 +1027,11 @@ justify-content: center;
 gap: 20px; 
 flex-wrap: wrap; 
 background-color: var(--card-background-color);
+padding: 10px;
 }      
-.testimonial-section>div {
-  width: 95%;
+
+.testimonial-card-container {
+  max-width: 1000px;
 }
 
 .testimonial-card {
@@ -1037,7 +1039,7 @@ background: var(--background-dark-color);
 padding: 30px;
 border-radius: 10px;
 box-shadow: 0 4px 8px rgba(0,0,0,0.1);
-max-width: 300px;
+max-width: 450px;
 transition: all 0.3s ease-in-out;
 }      
 .testimonial-quote {
