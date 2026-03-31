@@ -756,7 +756,22 @@ max-width: 600px;
 margin: 0 auto;
 }
 
+.early-access p {
+color: var(--text-muted-color);
+margin-bottom: 30px;
+}
 
+.early-form {
+display: flex;
+gap: 10px;
+justify-content: center;
+}
+
+.early-form input {
+padding: 15px;
+border-radius: 8px;
+max-width: 300px;
+}
 
 
 @keyframes scroll-left {
