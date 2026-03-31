@@ -885,12 +885,16 @@ max-width: 300px;
 
 /* CONTACT */
 .contact-section {
+  margin-top: 20px;
   place-items:center;
   text-align: center;
   color: var(--text-primary-color);
 }
-h4{
-  color: gray;
+.form-header h2 {
+  font-size: 4.5rem;
+}
+.form-header p{
+  color: var(--text-muted-color);
 }
 .form-container {
   padding: 30px;
