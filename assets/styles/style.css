@@ -706,6 +706,35 @@ header {
   font-size: var(--paragraph-size);
 }
 
+/* --- OUR STORY SECTION --- */
+
+.at-story {
+  padding: var(--section-padding) 0;
+  background-color: var(--background-dark-color);
+  text-align: center;
+  color: var(--text-primary-color);
+}
+
+.at-story__container {
+  max-width: 1000px; 
+  margin-inline: auto;
+}
+
+.at-story__header {
+  margin-bottom: 4rem;
+}
+
+.at-story__badge {
+  display: inline-block;
+  margin-bottom: 1.5rem;
+}
+
+.at-story__title {
+  font-size: var(--heading-size);
+  text-transform: uppercase;
+  letter-spacing: 2px;
+}
+
 /* GRID */
 .why-grid {
   display: grid;
