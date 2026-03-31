@@ -706,6 +706,73 @@ header {
   font-size: var(--paragraph-size);
 }
 
+/* --- OUR STORY SECTION --- */
+
+.at-story {
+  padding: var(--section-padding) 0;
+  background-color: var(--background-dark-color);
+  text-align: center;
+  color: var(--text-primary-color);
+}
+
+.at-story__header {
+  margin-bottom: 4rem;
+}
+
+.at-story__badge {
+  display: inline-block;
+  margin-bottom: 1.5rem;
+}
+
+.at-story__title {
+  font-size: var(--heading-size);
+  text-transform: uppercase;
+  letter-spacing: 2px;
+}
+
+.at-story__content {
+  max-width: 800px;
+  margin: 0 auto 6rem auto;
+}
+
+.at-story__content p {
+  font-size: 1.8rem; /* Slightly larger for readability */
+  line-height: 1.6;
+  color: var(--text-muted-color);
+  margin-bottom: 2.5rem;
+}
+
+/* Timeline Grid */
+.at-story__grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr); 
+  gap: var(--grid-gap);
+}
+
+.at-story-card {
+  padding: 4rem 2rem;
+  border-radius: var(--border-radius);
+  border: 1px solid var(--border-color);
+  transition: var(--transition);
+}
+
+.at-story-card:hover {
+  box-shadow: var(--hover-box-shadow);
+  transform: translateY(-5px);
+}
+
+.at-story-card__year {
+  color: var(--primary-color);
+  font-size: 3.2rem;
+  margin-bottom: 1rem;
+}
+
+.at-story-card__text {
+  font-size: 1.4rem;
+  color: var(--text-muted-color);
+}
+
+
 /* GRID */
 .why-grid {
   display: grid;
