@@ -36,4 +36,23 @@ allProducts.forEach((productList) => {
     }
   });
 });
+const modal = document.getElementById("loginModal");
+const loginBtns = document.querySelectorAll(".login-button"); // FIXED
+const closeBtn = document.getElementById("closeBtn");
+
+loginBtns.forEach(btn => {
+  btn.addEventListener("click", () => {
+    modal.style.display = "flex";
+  });
+});
+
+closeBtn.addEventListener("click", () => {
+  modal.style.display = "none";
+});
+
+window.addEventListener("click", (e) => {
+  if (e.target === modal) {
+    modal.style.display = "none";
+  }
+});
 
