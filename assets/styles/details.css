@@ -187,6 +187,29 @@ hr {
   font-size: 1rem;
 }
 
+/* DETAILS INFO */
+.info-container nav {
+  border-bottom: 1px solid var(--border-color);
+  font-family: var(--paragraph-font);
+}
+
+.tab-button {
+  background-color: transparent;
+  color: var(--text-muted-color);
+  padding: 1.2rem 2.4rem;
+  font-weight: 500;
+  transition: var(--transition);
+}
+
+.tab-button:not(.active):hover {
+  color: var(--text-primary-color);
+}
+
+.info-container .active {
+  border-bottom: 1px solid var(--primary-color);
+  color: var(--primary-color);
+}
+
 @media (max-width: 768px) {
   .details-product article {
     flex-direction: column;
