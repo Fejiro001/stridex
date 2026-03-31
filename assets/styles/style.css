@@ -743,6 +743,40 @@ footer .footer-data {
   color: var(--text-muted-color);
 }
 
+.early-access {
+background-color: var(--card-background-color);
+padding: 60px 20px;
+text-align: center;
+justify-content: center;
+place-items: center;
+}
+
+.early-container {
+max-width: 600px;
+margin: 0 auto;
+}
+
+.early-access p {
+color: var(--text-muted-color);
+margin-bottom: 30px;
+}
+
+.early-access h2 {
+  font-size: 4.5rem;
+}
+.early-form {
+display: flex;
+gap: 10px;
+justify-content: center;
+}
+
+.early-form input {
+padding: 15px;
+border-radius: 8px;
+max-width: 300px;
+}
+
+
 @keyframes scroll-left {
   0% {
     transform: translateX(0);
