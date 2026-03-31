@@ -1117,7 +1117,7 @@ margin-left: 7px;
 
 /*login section */
 .login-modal {
-   position: fixed;
+  position: fixed;
   top: 0;
   left: 0;
   width: 100%;
@@ -1126,7 +1126,6 @@ margin-left: 7px;
   background: rgba(10, 10, 10, 0.85);
   justify-content: center;
   align-items: center;
-  z-index: 999;
 }
 
 .login-box {
@@ -1137,7 +1136,7 @@ margin-left: 7px;
   border-radius: var(--border-radius);
   color: var(--text-primary-color);
   position: relative;
-  text-align: center;
+  text-align: left;
 }
 
 #closeBtn {
@@ -1157,12 +1156,15 @@ margin-left: 7px;
 /* Heading */
 .login-box h2 {
   margin-bottom: 0.5rem;
+  color: var(--primary-color);
+  text-align: center;
 }
 
 .login-box p {
   font-size: var(--nav-links-size);
   color: var(--text-muted-color);
   margin-bottom: 1.5rem;
+  text-align: center;
 }
 
 /* Inputs */
@@ -1178,8 +1180,8 @@ margin-left: 7px;
 }
 
 .login-box input:focus {
-  outline: none;
   border-color: var(--primary-color);
+  box-shadow: 10px var(--primary-color);
 }
 
 .login-btn {
