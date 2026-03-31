@@ -849,6 +849,7 @@ footer .footer-data {
   color: var(--text-muted-color);
 }
 
+/* EARLY-ACCESS */
 .early-access {
 background-color: var(--card-background-color);
 padding: 60px 20px;
@@ -881,6 +882,9 @@ padding: 15px;
 border-radius: 8px;
 max-width: 300px;
 }
+
+/* CONTACT */
+
 
 
 @keyframes scroll-left {
