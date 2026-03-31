@@ -37,22 +37,35 @@ allProducts.forEach((productList) => {
   });
 });
 const modal = document.getElementById("loginModal");
-const loginBtns = document.querySelectorAll(".login-button"); // FIXED
-const closeBtn = document.getElementById("closeBtn");
+const loginBtns = document.querySelectorAll(".login-button"); 
+const signinLink = document.querySelector(".login-btn");
+const signupLink = document.querySelector(".signup-link");
 
 loginBtns.forEach(btn => {
-  btn.addEventListener("click", () => {
+  btn.addEventListener("click", (e) => {
+    e.preventDefault();
     modal.style.display = "flex";
   });
 });
 
-closeBtn.addEventListener("click", () => {
-  modal.style.display = "none";
-});
+if (signupLink) {
+  signupLink.onclick = function() {
+    console.log("Sign up clicked! Closing modal..."); // This shows in F12 console
+    modal.style.display = "none";
+    document.body.style.overflow = "auto";
+  };
+}
+if (signinLink) {
+  signinLink.onclick = function() {
+    console.log("Sign in clicked! Closing modal..."); // This shows in F12 console
+    modal.style.display = "none";
+    document.body.style.overflow = "auto";
+  };
+}
 
-window.addEventListener("click", (e) => {
+window.onclick = function(e) {
   if (e.target === modal) {
     modal.style.display = "none";
+    document.body.style.overflow = "auto";
   }
-});
-
+};
