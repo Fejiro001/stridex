@@ -60,6 +60,50 @@
   letter-spacing: 2px;
 }
 
+.shoe-name {
+  color: var(--text-primary-color);
+  font-size: var(--heading-size);
+}
+
+.tagline,
+.details-rating span {
+  color: var(--text-muted-color);
+}
+
+.tagline {
+  font-size: 1.8rem;
+  margin-bottom: 1rem;
+}
+
+.details-rating {
+  display: inline;
+  width: 100%;
+  white-space: nowrap;
+
+  i,
+  span {
+    font-size: 1.4rem;
+  }
+}
+
+.details-price {
+  margin-top: 1.5rem;
+  font-family: var(--headings-font);
+}
+
+.details-price .price-now {
+  font-size: 3rem;
+}
+
+.details-price .slashed-price {
+  line-height: 100%;
+  font-size: 2rem;
+}
+
+.description {
+  color: var(--text-muted-color);
+}
+
 @media (max-width: 768px) {
   .product-tags {
     font-size: 1rem;
