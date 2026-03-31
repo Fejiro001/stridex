@@ -1115,6 +1115,26 @@ margin-left: 7px;
   }
 }
 
+.login-modal {
+  position: fixed;
+  background: rgba(10, 10, 10, 0.85);
+  display: none;
+  justify-content: center;
+  align-items: center;
+}
+
+.login-box {
+  background: var(--card-background-color);
+  border: 1px solid var(--border-color);
+  padding: 2rem;
+  width: 320px;
+  border-radius: var(--border-radius);
+  color: var(--text-primary-color);
+  position: relative;
+  text-align: center;
+}
+
+
 @media (max-width: 480px) {
   /* SHOP SECTION */
   .shop-products {
@@ -1126,3 +1146,5 @@ margin-left: 7px;
     grid-template-columns: repeat(1, minmax(0, 1fr));
   }
 }
+
+
