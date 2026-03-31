@@ -755,7 +755,6 @@ header {
 }
 
 .at-story-card {
-  background-color: var(--card-background-color);
   padding: 4rem 2rem;
   border-radius: var(--border-radius);
   border: 1px solid var(--border-color);
@@ -763,7 +762,6 @@ header {
 }
 
 .at-story-card:hover {
-  border-color: var(--primary-color);
   box-shadow: var(--hover-box-shadow);
   transform: translateY(-5px);
 }
