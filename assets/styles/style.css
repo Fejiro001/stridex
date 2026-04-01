@@ -96,9 +96,20 @@ header {
   font-size: var(--nav-links-size);
 }
 
+.logout {
+  background-color: var(--error-color);
+  color: var(--text-primary-color);
+  border-color: var(--error-color);
+}
+
 .login-button:hover {
   background-color: var(--primary-color);
   color: var(--background-dark-color);
+}
+
+.logout:hover {
+  background-color: var(--text-primary-color);
+  color: var(--error-color);
 }
 
 .cart {

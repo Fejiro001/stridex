@@ -53,12 +53,34 @@ allProducts.forEach((productList) => {
   });
 });
 
+function changeToLogin(btn) {
+  btn.classList.remove("logout");
+  btn.innerHTML = `
+    <i class="fa-regular fa-user"></i>
+    <span>Login</span>
+  `;
+}
+
 // Target login buttons in both desktop and mobile
 loginBtns.forEach((btn) => {
   btn.addEventListener("click", () => {
-    modal.style.display = "flex";
+    if (btn.classList.contains("logout")) {
+      changeToLogin(btn);
+    } else {
+      modal.style.display = "flex";
+    }
   });
 });
+
+function changeToLogout() {
+  loginBtns.forEach((btn) => {
+    btn.innerHTML = `
+    <i class="fa-solid fa-arrow-right-from-bracket"></i>
+    <span>Logout</span>
+    `;
+    btn.classList.add("logout");
+  });
+}
 
 function closeModal() {
   modal.style.display = "none";
@@ -66,10 +88,12 @@ function closeModal() {
 
 signupLink.addEventListener("click", () => {
   closeModal();
+  changeToLogout();
 });
 
 signinLink.addEventListener("click", () => {
   closeModal();
+  changeToLogout();
 });
 
 closeBtn.addEventListener("click", () => {
