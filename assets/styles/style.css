@@ -1,14 +1,6 @@
 @import "./reset.css";
 @import "./root.css";
 
-.section-title {
-  color: var(--text-primary-color);
-  font-size: var(--heading-size);
-  letter-spacing: 2.4px;
-  line-height: 48px;
-  margin-bottom: 1rem;
-}
-
 /* HEADER */
 header {
   position: fixed;
@@ -187,10 +179,6 @@ header {
   display: block;
 }
 
-.highlight {
-  color: var(--primary-color);
-}
-
 .hero-intro {
   font-size: 1.8rem;
   color: var(--text-muted-color);
@@ -209,43 +197,9 @@ header {
   display: inline-block;
 }
 
-.primary-button,
-.secondary-button {
-  border-radius: var(--border-radius);
-  text-transform: uppercase;
-  font-weight: 600;
-  transition: var(--transition);
-}
-
-.primary-button {
-  padding: 1.2rem 3.2rem;
-  background-color: var(--primary-color);
-  color: var(--background-dark-color);
-}
-
 .fa-arrow-right {
   padding-left: 1rem;
   transition: var(--transition);
-}
-
-.primary-button:hover {
-  box-shadow: var(--hover-box-shadow);
-
-  .fa-arrow-right {
-    padding-left: 1.5rem;
-  }
-}
-
-.secondary-button {
-  padding: 1rem 3.2rem;
-  border: 2px solid var(--primary-color);
-  color: var(--primary-color);
-  background-color: var(--background-dark-color);
-}
-
-.secondary-button:hover {
-  background-color: var(--primary-color);
-  color: var(--background-dark-color);
 }
 
 .hero-extra-info {

@@ -69,3 +69,49 @@ a {
 li {
   list-style: none;
 }
+
+.section-title {
+  color: var(--text-primary-color);
+  font-size: var(--heading-size);
+  letter-spacing: 2.4px;
+  line-height: 48px;
+  margin-bottom: 1rem;
+}
+
+.primary-button,
+.secondary-button {
+  border-radius: var(--border-radius);
+  text-transform: uppercase;
+  font-weight: 600;
+  transition: var(--transition);
+}
+
+.primary-button {
+  padding: 1.2rem 3.2rem;
+  background-color: var(--primary-color);
+  color: var(--background-dark-color);
+}
+
+.primary-button:hover {
+  box-shadow: var(--hover-box-shadow);
+
+  .fa-arrow-right {
+    padding-left: 1.5rem;
+  }
+}
+
+.secondary-button {
+  padding: 1rem 3.2rem;
+  border: 2px solid var(--primary-color);
+  color: var(--primary-color);
+  background-color: var(--background-dark-color);
+}
+
+.secondary-button:hover {
+  background-color: var(--primary-color);
+  color: var(--background-dark-color);
+}
+
+.highlight {
+  color: var(--primary-color);
+}
