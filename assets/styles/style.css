@@ -639,25 +639,32 @@ header {
 
 .featured-visual {
   position: relative;
-  flex: 1;
-  display: flex;
-  justify-content: flex-end;
 }
 
 .featured-price {
+  position: absolute;
+  top: 16px;
+  right: 16px;
   border-radius: var(--border-radius);
   border: 1px solid var(--border-color);
+  background-color: var(--background-dark-color);
+  text-align: center;
+  padding: 1.5rem;
 }
 
 .featured-price p:first-child {
   color: var(--text-muted-color);
+  text-transform: uppercase;
   font-size: 1rem;
+  font-weight: 500;
+  margin-bottom: 0.5rem;
 }
 
 .featured-price p:last-child {
   font-family: var(--headings-font);
   color: var(--primary-color);
   font-size: 2.4rem;
+  line-height: 24px;
 }
 
 .featured-image-frame {
@@ -1228,6 +1235,11 @@ textarea:focus {
   .stat-item {
     width: calc(50% - 1.5rem);
     flex: 1 1 calc(50% - 1.5rem);
+  }
+
+  /* FEATURED SECTION */
+  .featured-container {
+    flex-direction: column;
   }
 
   /* WHY SECTION */
