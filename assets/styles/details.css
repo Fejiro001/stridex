@@ -228,6 +228,22 @@ hr {
   color: var(--primary-color);
 }
 
+.specs-list li {
+  display: flex;
+  justify-content: space-between;
+  padding: 1.5rem 0.5rem;
+  margin-bottom: 1rem;
+  border-bottom: 1px solid var(--border-color);
+}
+
+.specs-list li span:first-child {
+  color: var(--text-muted-color);
+}
+
+.specs-list li span:last-child {
+  color: var(--text-primary-color);
+}
+
 @media (max-width: 768px) {
   .details-product article {
     flex-direction: column;
