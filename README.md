@@ -83,4 +83,4 @@ This process improved:
 
 ## Demo
 
-Click [here]() to demo
+Click [here](https://fejiro001.github.io/stridex/) to demo
