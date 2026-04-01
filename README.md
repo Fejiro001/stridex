@@ -1,6 +1,12 @@
-# StrideX
+
+# Stride❎
+- - -
+### COLLABORATORS:  
+
+>👩STEPHANIE   👩ROOP    👨PATRICK   
 
 ## Description
+
 
 ## Features
 
