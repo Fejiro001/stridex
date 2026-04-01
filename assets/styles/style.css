@@ -575,7 +575,7 @@ header {
 }
 
 .featured-title {
-  font-size: 7.2rem;
+  font-size: var(--heading-size);
   line-height: 0.9;
   margin-bottom: 1.5rem;
   color: var(--text-primary-color);
@@ -634,6 +634,7 @@ header {
 
 .featured-actions {
   display: flex;
+  flex-wrap: wrap;
   align-items: center;
   gap: 2rem;
 }
@@ -941,29 +942,25 @@ textarea:focus {
 }
 
 .early-container {
-  max-width: 600px;
-  margin: 0 auto;
+  max-width: 70rem;
 }
 
-.early-access p {
-  color: var(--text-muted-color);
-  margin-bottom: 30px;
-}
-
-.early-access h2 {
-  font-size: 4.5rem;
+.early-badge {
+  margin-inline: auto;
 }
 
 .early-form {
   display: flex;
-  gap: 10px;
   justify-content: center;
+  align-items: center;
+  gap: 1.2rem;
 }
 
 .early-form input {
+  margin: 0;
   padding: 15px;
-  border-radius: 8px;
-  max-width: 300px;
+  border-radius: var(--border-radius);
+  background-color: var(--background-dark-color);
 }
 
 /* FOOTER */
@@ -1176,6 +1173,7 @@ footer .footer-data {
 
 @media (max-width: 768px) {
   :root {
+    --heading-size: 3.6rem;
     --hero-title: 4.8rem;
     --grid-gap: 2rem;
   }
@@ -1267,5 +1265,14 @@ footer .footer-data {
   /* WHY SECTION */
   .why-grid {
     grid-template-columns: repeat(1, minmax(0, 1fr));
+  }
+
+  /* EARLY ACCESS SECTION */
+  .early-form {
+    flex-direction: column;
+
+    button {
+      width: 100%;
+    }
   }
 }
