@@ -244,6 +244,39 @@ hr {
   color: var(--text-primary-color);
 }
 
+.reviews-list {
+  display: grid;
+  grid-template-columns: repeat(1, minmax(0, 1fr));
+  gap: var(--grid-gap);
+  color: var(--text-muted-color);
+}
+
+.reviews-list li {
+  background-color: var(--card-background-color);
+  border: 1px solid var(--border-color);
+  border-radius: var(--border-radius);
+  padding: 2rem;
+}
+
+.review-header {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 1rem;
+}
+
+.review-header i {
+  color: var(--primary-color);
+}
+
+.user-name {
+  color: var(--text-primary-color);
+  margin-right: 0.5rem;
+}
+
+.date-of-review {
+  font-size: 1.2rem;
+}
+
 @media (max-width: 768px) {
   .details-product article {
     flex-direction: column;
