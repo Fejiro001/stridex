@@ -50,20 +50,17 @@ loginBtns.forEach((btn) => {
   });
 });
 
-if (signupLink) {
-  signupLink.onclick = function () {
-    console.log("Sign up clicked! Closing modal...");
-    modal.style.display = "none";
-    document.body.style.overflow = "auto";
-  };
-}
-if (signinLink) {
-  signinLink.onclick = function () {
-    console.log("Sign in clicked! Closing modal...");
-    modal.style.display = "none";
-    document.body.style.overflow = "auto";
-  };
-}
+signupLink.onclick = function () {
+  console.log("Sign up clicked! Closing modal...");
+  modal.style.display = "none";
+  document.body.style.overflow = "auto";
+};
+
+signinLink.onclick = function () {
+  console.log("Sign in clicked! Closing modal...");
+  modal.style.display = "none";
+  document.body.style.overflow = "auto";
+};
 
 window.onclick = function (e) {
   if (e.target === modal) {
