@@ -3,6 +3,10 @@
 const menuButton = document.querySelector(".menu-toggle");
 const navActions = document.getElementById("nav-actions");
 const allProducts = document.querySelectorAll(".product");
+const modal = document.getElementById("loginModal");
+const loginBtns = document.querySelectorAll(".login-button");
+const signinLink = document.querySelector(".login-btn");
+const signupLink = document.querySelector(".signup-link");
 const tabs = document.querySelectorAll(".tab-button");
 const contents = document.querySelectorAll(".tab-content");
 
@@ -38,14 +42,10 @@ allProducts.forEach((productList) => {
     }
   });
 });
-const modal = document.getElementById("loginModal");
-const loginBtns = document.querySelectorAll(".login-button");
-const signinLink = document.querySelector(".login-btn");
-const signupLink = document.querySelector(".signup-link");
 
+// Target login buttons in both desktop and mobile
 loginBtns.forEach((btn) => {
-  btn.addEventListener("click", (e) => {
-    e.preventDefault();
+  btn.addEventListener("click", () => {
     modal.style.display = "flex";
   });
 });
