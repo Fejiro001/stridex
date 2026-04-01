@@ -387,7 +387,6 @@ header {
 
 .shop-intro p {
   color: var(--text-muted-color);
-  font-size: var(--paragraph-size);
 }
 
 .shop-categories {
@@ -610,7 +609,7 @@ header {
 }
 
 .featured-title {
-  font-size: var(--heading-size);
+  font-size: 6rem;
   line-height: 0.9;
   margin-bottom: 1.5rem;
   color: var(--text-primary-color);
@@ -732,7 +731,6 @@ header {
 .section-subtitle {
   color: var(--text-muted-color);
   margin-bottom: 4rem;
-  font-size: var(--paragraph-size);
 }
 
 .why-grid {
@@ -805,12 +803,10 @@ header {
 }
 
 .about-content {
-  max-width: 800px;
   margin-bottom: 5.6rem;
 }
 
 .about-content p {
-  font-size: var(--paragraph-size);
   color: var(--text-muted-color);
   margin-bottom: 2rem;
 }
