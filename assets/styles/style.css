@@ -98,6 +98,7 @@ header {
   justify-content: space-between;
   align-items: center;
   gap: 2rem;
+  font-size: var(--nav-links-size);
 }
 
 .header-container {
@@ -128,6 +129,11 @@ header {
   }
 }
 
+.header-buttons {
+  display: flex;
+  gap: 2rem;
+}
+
 .menu-toggle,
 #mobile-login {
   display: none;
@@ -151,7 +157,8 @@ header {
 
 .navigation-list a:hover,
 .menu-toggle:hover,
-.login-button {
+.login-button,
+.cart:hover {
   color: var(--primary-color);
 }
 
@@ -163,11 +170,39 @@ header {
   padding: 0.5rem 2rem;
   text-transform: uppercase;
   font-weight: 600;
+  font-size: var(--nav-links-size);
 }
 
 .login-button:hover {
   background-color: var(--primary-color);
   color: var(--background-dark-color);
+}
+
+.cart {
+  position: relative;
+  color: var(--text-primary-color);
+  background-color: transparent;
+  transition: var(--transition);
+}
+
+.cart i {
+  font-size: 1.8rem;
+}
+
+.cart-items {
+  position: absolute;
+  top: -5px;
+  right: -10px;
+  color: var(--primary-color);
+  background-color: var(--background-dark-color);
+  border: 1px solid var(--primary-color);
+  border-radius: 50%;
+  height: 2rem;
+  width: 2rem;
+  font-size: 1.2rem;
+  font-weight: 600;
+  font-family: var(--paragraph-font);
+  line-height: 2rem;
 }
 
 /* HERO SECTION */
