@@ -753,27 +753,26 @@ header {
   color: var(--text-primary-color);
 }
 
-.about__header {
+.about-header {
   margin-bottom: 4rem;
 }
 
-.about__badge {
+.about-badge {
   display: inline-block;
-  margin-bottom: 1.5rem;
 }
 
-.about__title {
+.about-title {
   font-size: var(--heading-size);
   text-transform: uppercase;
   letter-spacing: 2px;
 }
 
-.about__content {
+.about-content {
   max-width: 800px;
   margin: 0 auto 6rem auto;
 }
 
-.about__content p {
+.about-content p {
   font-size: 1.8rem;
   line-height: 1.6;
   color: var(--text-muted-color);
@@ -781,7 +780,7 @@ header {
 }
 
 /* Timeline Grid */
-.about__grid {
+.about-grid {
   display: grid;
   grid-template-columns: repeat(4, 1fr);
   gap: var(--grid-gap);
@@ -799,13 +798,13 @@ header {
   transform: translateY(-5px);
 }
 
-.about-card__year {
+.about-card-year {
   color: var(--primary-color);
   font-size: 3.2rem;
   margin-bottom: 1rem;
 }
 
-.about-card__text {
+.about-card-text {
   font-size: 1.4rem;
   color: var(--text-muted-color);
 }
