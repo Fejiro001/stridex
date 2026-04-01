@@ -1,4 +1,5 @@
 @import "./reset.css";
+@import "./root.css";
 
 .details-container {
   padding: var(--section-padding) 0;
@@ -10,8 +11,13 @@
 }
 
 .back-home {
+  width: fit-content;
   color: var(--text-muted-color);
   transition: var(--transition);
+
+  i {
+    margin-right: 1.2rem;
+  }
 }
 
 .back-home:hover {
@@ -244,9 +250,13 @@ hr {
   color: var(--text-primary-color);
 }
 
+.review-rating {
+  font-size: 1.2rem;
+}
+
 .reviews-list {
   display: grid;
-  grid-template-columns: repeat(1, minmax(0, 1fr));
+  grid-template-columns: repeat(2, minmax(0, 1fr));
   gap: var(--grid-gap);
   color: var(--text-muted-color);
 }
@@ -299,4 +309,8 @@ hr {
   .product-tags {
     font-size: 1rem;
   }
+
+  .reviews-list {
+  grid-template-columns: repeat(1, minmax(0, 1fr));
+}
 }
