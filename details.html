@@ -11,8 +11,8 @@
     <meta name="keywords" content="shoes, workout, gym" />
     <link rel="icon" href="./assets/media/favicon.png?v=2" type="image/x-icon" />
     <title>StrideX</title>
-    <link rel="stylesheet" href="./assets/styles/style.css" />
     <link rel="stylesheet" href="./assets/styles/details.css" />
+    <link rel="stylesheet" href="./assets/styles/style.css" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
@@ -36,7 +36,7 @@
         </a>
         <nav id="nav-actions">
           <ul class="navigation-list">
-            <li><a href="#">Home</a></li>
+            <li><a href="/">Home</a></li>
             <li><a href="#shop">Shop</a></li>
             <li><a href="#about">About</a></li>
             <li><a href="#contact">Contact</a></li>
@@ -48,20 +48,26 @@
             </li>
           </ul>
         </nav>
-        <button id="desktop-login" class="login-button">
-          <i class="fa-regular fa-user"></i>
-          <span>Login</span>
-        </button>
-        <button class="menu-toggle">
-          <i class="fa-solid fa-bars-staggered"></i>
-        </button>
+        <div class="header-buttons">
+          <button id="desktop-login" class="login-button">
+            <i class="fa-regular fa-user"></i>
+            <span>Login</span>
+          </button>
+          <button class="cart">
+            <span class="cart-items">0</span>
+            <i class="fa-solid fa-cart-shopping"></i>
+          </button>
+          <button class="menu-toggle">
+            <i class="fa-solid fa-bars-staggered"></i>
+          </button>
+        </div>
       </div>
     </header>
     <main>
       <section class="details-section">
         <div class="container details-container">
           <div class="details-product">
-            <a class="back-home" href="/"><i class="fa-solid fa-arrow-left"></i> Back to Home</a>
+            <a class="back-home" href="/"><i class="fa-solid fa-arrow-left"></i>Back to Home</a>
             <article>
               <div class="details-image">
                 <ul class="details-tags">
@@ -318,16 +324,37 @@
         </div>
       </section>
       <section class="early-access">
-        <div class="update-badge">Get Early Access</div>
-        <div class="early-container">
-          <h2 class="section-title">STAY IN THE <span>LOOP</span></h2>
-          <p>Join the waitlist to be the first to know about new drops, exclusive deals, and StrideX events.</p>
+        <div class="container early-container">
+          <div class="early-header">
+            <div class="update-badge early-badge">Get Early Access</div>
+            <h2 class="section-title">STAY IN THE <span class="highlight">LOOP</span></h2>
+            <p class="section-subtitle">Join the waitlist to be the first to know about new drops, exclusive deals, and StrideX events.</p>
+          </div>
           <form class="early-form">
             <input type="email" placeholder="Enter your email" required />
             <button type="submit" class="primary-button">SUBSCRIBE</button>
           </form>
         </div>
       </section>
+      <div id="login-modal" class="login-modal">
+        <div class="login-box">
+          <div class="modal-header">
+            <div class="text">
+              <h2>Welcome back</h2>
+              <p>Sign in to your StrideX account</p>
+            </div>
+            <i class="fa-solid fa-x" id="closeBtn"></i>
+          </div>
+          <form>
+            <label for="modal-email">Email</label>
+            <input type="email" id="modal-email" placeholder="you@example.com" />
+            <label for="modal-password">Password</label>
+            <input type="password" id="modal-password" placeholder="••••••••" />
+            <button class="primary-button login-btn">Sign in</button>
+          </form>
+          <p class="signup-text">Don't have an account? <a href="#" class="signup-link">Sign Up</a></p>
+        </div>
+      </div>
     </main>
     <footer>
       <div class="container footer-container">
@@ -402,16 +429,5 @@
         </div>
       </div>
     </footer>
-    <div id="loginModal" class="login-modal">
-      <div class="login-box">
-        <span id="closeBtn">&times;</span>
-        <h2>WELCOME BACK</h2>
-        <p>Sign in to your StrideX account</p>
-        <input type="email" placeholder="Email" />
-        <input type="password" placeholder="Password" />
-        <button class="login-btn">SIGN IN</button>
-        <p class="signup-text">Don't have an account? <span class="signup-link">Sign Up</span></p>
-      </div>
-    </div>
   </body>
 </html>

@@ -1,0 +1,117 @@
+@import "./reset.css";
+
+:root {
+  --max-width: 1280px;
+  --border-radius: 5px;
+  --section-padding: 10rem;
+  --card-padding: 2rem;
+  --grid-gap: 3.2rem;
+
+  --headings-font: "Bebas Neue", sans-serif;
+  --paragraph-font: "Inter", sans-serif;
+
+  --primary-color: #40ff1a;
+  --background-dark-color: #0a0a0a;
+  --card-background-color: #1a1a1a;
+  --text-primary-color: #ffffff;
+  --text-muted-color: #939393;
+  --border-color: #333333;
+  --error-color: #b00000;
+  --error-accent-color: #f87171;
+
+  --hero-title: 9.6rem;
+  --badges-size: 1.2rem;
+  --heading-size: 4.8rem;
+  --paragraph-size: 1.6rem;
+  --nav-links-size: 1.4rem;
+
+  --hover-box-shadow: 0 0 15px rgba(64, 255, 26, 0.7);
+
+  --transition: all 0.25s ease-in-out;
+}
+
+.container {
+  max-width: min(100% - 30px, var(--max-width));
+  margin-inline: auto;
+}
+
+h1,
+h2,
+h3 {
+  font-family: var(--headings-font);
+  letter-spacing: 1px;
+}
+
+h1 {
+  font-size: var(--heading-size);
+}
+
+p,
+button {
+  font-size: var(--paragraph-size);
+}
+
+p,
+a,
+button,
+label {
+  font-family: var(--paragraph-font);
+}
+
+body {
+  background-color: var(--background-dark-color);
+}
+
+a {
+  text-decoration: none;
+}
+
+li {
+  list-style: none;
+}
+
+.section-title {
+  color: var(--text-primary-color);
+  font-size: var(--heading-size);
+  letter-spacing: 2.4px;
+  line-height: 48px;
+  margin-bottom: 1rem;
+}
+
+.primary-button,
+.secondary-button {
+  border-radius: var(--border-radius);
+  text-transform: uppercase;
+  font-weight: 600;
+  transition: var(--transition);
+}
+
+.primary-button {
+  padding: 1.2rem 3.2rem;
+  background-color: var(--primary-color);
+  color: var(--background-dark-color);
+}
+
+.primary-button:hover {
+  box-shadow: var(--hover-box-shadow);
+
+  .fa-arrow-right {
+    padding-left: 1.5rem;
+  }
+}
+
+.secondary-button {
+  padding: 1rem 3.2rem;
+  border: 2px solid var(--primary-color);
+  color: var(--primary-color);
+  background-color: var(--background-dark-color);
+}
+
+.secondary-button:hover {
+  background-color: var(--primary-color);
+  color: var(--background-dark-color);
+}
+
+.highlight {
+  color: var(--primary-color);
+}
