@@ -1061,6 +1061,27 @@ footer .footer-data {
   text-decoration: underline;
 }
 
+/* BACK TO TOP BUTTON */
+.back-to-top {
+  display: grid;
+  place-items: center;
+  position: fixed;
+  bottom: 5rem;
+  right: 5rem;
+  background-color: var(--primary-color);
+  height: 5rem;
+  width: 5rem;
+  border-radius: 50%;
+
+  i {
+    display: block;
+    font-size: 2rem;
+    line-height: 5rem;
+    text-align: center;
+    color: var(--background-dark-color);
+  }
+}
+
 @keyframes scroll-left {
   0% {
     transform: translateX(0);
