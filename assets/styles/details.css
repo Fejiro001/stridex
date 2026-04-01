@@ -206,7 +206,7 @@ hr {
   color: var(--text-primary-color);
 }
 
-.info-container .active {
+.tab-button.active {
   border-bottom: 1px solid var(--primary-color);
   color: var(--primary-color);
 }
@@ -275,6 +275,10 @@ hr {
 
 .date-of-review {
   font-size: 1.2rem;
+}
+
+.tab-content:not(.active) {
+  display: none;
 }
 
 @media (max-width: 768px) {
