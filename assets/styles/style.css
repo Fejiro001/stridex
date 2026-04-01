@@ -1063,7 +1063,7 @@ footer .footer-data {
 
 /* BACK TO TOP BUTTON */
 .back-to-top {
-  display: grid;
+  display: none;
   place-items: center;
   position: fixed;
   bottom: 5rem;
@@ -1072,6 +1072,7 @@ footer .footer-data {
   height: 5rem;
   width: 5rem;
   border-radius: 50%;
+  animation: show 0.4s ease-in-out;
 
   i {
     display: block;

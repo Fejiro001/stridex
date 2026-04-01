@@ -10,6 +10,15 @@ const signupLink = document.querySelector(".signup-link");
 const closeBtn = document.getElementById("closeBtn");
 const tabs = document.querySelectorAll(".tab-button");
 const contents = document.querySelectorAll(".tab-content");
+const backToTop = document.querySelector(".back-to-top");
+
+window.addEventListener("scroll", () => {
+  if (window.scrollY > 200) {
+    backToTop.style.display = "grid";
+  } else {
+    backToTop.style.display = "none";
+  }
+});
 
 menuButton.addEventListener("click", () => {
   navActions.classList.toggle("show-nav");
