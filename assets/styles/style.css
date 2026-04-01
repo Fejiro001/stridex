@@ -69,6 +69,14 @@ li {
   list-style: none;
 }
 
+.section-title {
+  color: var(--text-primary-color);
+  font-size: var(--heading-size);
+  letter-spacing: 2.4px;
+  line-height: 48px;
+  margin-bottom: 1rem;
+}
+
 /* HEADER */
 header {
   position: fixed;
@@ -340,11 +348,6 @@ header {
   text-align: center;
 }
 
-.shop-intro h2 {
-  color: var(--text-primary-color);
-  font-size: var(--heading-size);
-}
-
 .shop-intro p {
   color: var(--text-muted-color);
   font-size: var(--paragraph-size);
@@ -589,6 +592,7 @@ header {
 
 .countdown-grid {
   display: flex;
+  flex-wrap: wrap;
   gap: 1.5rem;
   margin-bottom: 4rem;
 }
@@ -687,11 +691,6 @@ header {
   background-color: var(--card-background-color);
 }
 
-.why-section .section-title {
-  font-size: var(--heading-size);
-  color: var(--text-primary-color);
-}
-
 .section-subtitle {
   color: var(--text-muted-color);
   margin-bottom: 4rem;
@@ -745,8 +744,8 @@ header {
   transform: translateY(-6px);
 }
 
-/* OUR STORY SECTION */
-.about {
+/* ABOUT SECTION */
+.about-section {
   padding: var(--section-padding) 0;
   background-color: var(--background-dark-color);
   text-align: center;
@@ -754,7 +753,7 @@ header {
 }
 
 .about-header {
-  margin-bottom: 4rem;
+  margin-bottom: 3rem;
 }
 
 .about-badge {
@@ -763,49 +762,43 @@ header {
 
 .about-title {
   font-size: var(--heading-size);
-  text-transform: uppercase;
-  letter-spacing: 2px;
+  letter-spacing: 2.4px;
+  line-height: 48px;
 }
 
 .about-content {
   max-width: 800px;
-  margin: 0 auto 6rem auto;
+  margin-bottom: 5.6rem;
 }
 
 .about-content p {
-  font-size: 1.8rem;
-  line-height: 1.6;
+  font-size: var(--paragraph-size);
   color: var(--text-muted-color);
-  margin-bottom: 2.5rem;
+  margin-bottom: 2rem;
 }
 
-/* Timeline Grid */
 .about-grid {
   display: grid;
-  grid-template-columns: repeat(4, 1fr);
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
   gap: var(--grid-gap);
 }
 
 .about-card {
-  padding: 4rem 2rem;
+  padding: 2.5rem;
+  background-color: var(--card-background-color);
   border-radius: var(--border-radius);
   border: 1px solid var(--border-color);
   transition: var(--transition);
 }
 
-.about-card:hover {
-  box-shadow: var(--hover-box-shadow);
-  transform: translateY(-5px);
-}
-
 .about-card-year {
   color: var(--primary-color);
-  font-size: 3.2rem;
-  margin-bottom: 1rem;
+  font-size: 3rem;
+  margin-bottom: 0.5rem;
 }
 
 .about-card-text {
-  font-size: 1.4rem;
+  font-size: var(--nav-links-size);
   color: var(--text-muted-color);
 }
 
