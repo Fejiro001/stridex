@@ -212,7 +212,7 @@ header {
   display: block;
 }
 
-.hero-highlight {
+.highlight {
   color: var(--primary-color);
 }
 

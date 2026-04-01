@@ -281,6 +281,16 @@ hr {
   display: none;
 }
 
+.also-like-section {
+  padding: var(--section-padding) 0;
+}
+
+.also-like-section h2 {
+  color: var(--text-primary-color);
+  font-size: var(--heading-size);
+  margin-bottom: 4rem;
+}
+
 @media (max-width: 768px) {
   .details-product article {
     flex-direction: column;
