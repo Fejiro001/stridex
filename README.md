@@ -1,26 +1,85 @@
+# StrideX
 
-# Stride❎
-- - -
-### COLLABORATORS:  
+## Collaborators:
 
->👩STEPHANIE   👩ROOP    👨PATRICK   
+- Oghenefejiro Stephanie Abere
+- Roopjeet Kaur
+- Patrick Rukundo
 
 ## Description
-This a team project aimed at creating a highly responsive website, with some basic web page elements and sections to give it that overall feel. Our team decided on building a modern, yet futuristic shopping experience mainly aimed at athletes. Each team member was assigned different sections of the webpage, and we made to sure to keep a cohesive overall styling on the website.
+
+StrideX is a collaborative team project focused on building a modern, futuristic athletic shopping experience. The goal was to design and develop a highly responsive website that delivers a sleek user interface while maintaining performance across devices.
+
+The website emphasizes clean design, interactive elements, and a cohesive visual style. Each team member was responsible for different sections of the webpage, while ensuring consistency in layout, typography, and overall design system.
 
 ## Features
-* ➿ Responsive Design: "Fully optimized for desktops 💻, tablets 📟, and mobile devices 📱."
-* 👪 User Login: A modal to simulate a secure log-in option for all our customers .
-* 🗺️ Product Overview: A pop-up page that includes further details about the shoe product.
- 
+
+- Responsive design optimized for desktop, tablet, and mobile devices
+- Interactive user login modal simulation
+- Product overview pop-up with additional shoe details
+- Modern hero section with performance statistics
+- Cohesive futuristic UI styling
+- Interactive UI elements using JavaScript DOM manipulation
+
 ## Technologies Used
-* Front-end: CSS, HTML5, JavaScript
-* Tools/Services: VS-Code, Gitbash/GitHub
+
+### Front-end
+
+- HTML5
+- CSS
+- JavaScript
+
+### Tools/Services
+
+- VS Code
+- Git/GitHub
 
 ## Key Implementation Details
-* Used the :root and var() mechanism in CSS to keep our webpage design cohesive and consistent with the overall theme and layout of our shoe website.
-* Our main challenges came during the merging of branches, through the many rebases and the annoying conflicts that had to be resolved during this time. 
-* JavaScript DOM manipulation used to make some of our clickable sections a bit more interactive in a sense. 
+
+### Design Consistency
+
+CSS variables were implemented using :root and var() to maintain consistent colors, spacing, and typography throughout the website.
+
+```css
+:root {
+  --max-width: 1280px;
+  --border-radius: 5px;
+  --section-padding: 10rem;
+  --card-padding: 2rem;
+  --grid-gap: 3.2rem;
+}
+```
+
+### Interactive Elements
+
+JavaScript DOM manipulation was used to create interactive components such as:
+
+- Login modal
+- Product overview pop-up
+- Clickable UI sections
+- Dynamic content display
+
+```js
+tabs.forEach((tab) => {
+  tab.addEventListener("click", () => {
+    tabs.forEach((t) => t.classList.remove("active"));
+    contents.forEach((c) => c.classList.remove("active"));
+
+    tab.classList.add("active");
+    document.getElementById(tab.dataset.tab).classList.add("active");
+  });
+});
+```
+
+## Collaboration & Version Control
+
+One of the main challenges during development was managing Git branches and resolving merge conflicts. Through rebasing and collaborative debugging, the team successfully merged all sections while maintaining design consistency.
+
+This process improved:
+
+- Team collaboration
+- Git workflow understanding
+- Conflict resolution skills
 
 ## Demo
 
