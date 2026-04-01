@@ -6,7 +6,7 @@
 >👩STEPHANIE   👩ROOP    👨PATRICK   
 
 ## Description
-
+This a team project aimed at creating a highly responsive website, with some basic web page elements and sections to give it that overall feel. Our team decided on building a modern, yet futuristic shopping experience mainly aimed at athletes. Each team member was assigned different sections of the webpage, and we made to sure to keep a cohesive overall styling on the website.
 
 ## Features
 
