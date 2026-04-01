@@ -681,32 +681,25 @@ header {
 }
 
 /* WHY SECTION */
-.why {
+.why-section {
   padding: var(--section-padding) 0;
   text-align: center;
   background-color: var(--card-background-color);
 }
 
 /* TITLE */
-.why .section-title {
+.why-section .section-title {
   font-size: var(--heading-size);
   color: var(--text-primary-color);
-  margin-bottom: 1rem;
 }
 
-.section-title span {
-  color: var(--primary-color);
-}
-
-/* SUBTITLE */
 .section-subtitle {
   color: var(--text-muted-color);
-  margin-bottom: 5rem;
+  margin-bottom: 4rem;
   font-size: var(--paragraph-size);
 }
 
-/* --- OUR STORY SECTION --- */
-
+/* OUR STORY SECTION */
 .at-story {
   padding: var(--section-padding) 0;
   background-color: var(--background-dark-color);
