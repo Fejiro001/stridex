@@ -638,9 +638,26 @@ header {
 }
 
 .featured-visual {
+  position: relative;
   flex: 1;
   display: flex;
   justify-content: flex-end;
+}
+
+.featured-price {
+  border-radius: var(--border-radius);
+  border: 1px solid var(--border-color);
+}
+
+.featured-price p:first-child {
+  color: var(--text-muted-color);
+  font-size: 1rem;
+}
+
+.featured-price p:last-child {
+  font-family: var(--headings-font);
+  color: var(--primary-color);
+  font-size: 2.4rem;
 }
 
 .featured-image-frame {
