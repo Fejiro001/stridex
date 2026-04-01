@@ -212,7 +212,7 @@ header {
   display: block;
 }
 
-.hero-highlight {
+.highlight {
   color: var(--primary-color);
 }
 
@@ -264,6 +264,7 @@ header {
   padding: 1rem 3.2rem;
   border: 2px solid var(--primary-color);
   color: var(--primary-color);
+  background-color: var(--background-dark-color);
 }
 
 .secondary-button:hover {
@@ -485,7 +486,7 @@ header {
   color: var(--primary-color);
 }
 
-.fa-star {
+.product-rating .fa-star {
   margin-right: 0.4rem;
 }
 
