@@ -857,10 +857,6 @@ textarea:focus {
   place-items: center;
 }
 
-.early-container {
-  max-width: 70rem;
-}
-
 .early-badge {
   margin-inline: auto;
 }
