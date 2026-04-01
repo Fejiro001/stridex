@@ -3,7 +3,7 @@
 const menuButton = document.querySelector(".menu-toggle");
 const navActions = document.getElementById("nav-actions");
 const allProducts = document.querySelectorAll(".product");
-const modal = document.getElementById("loginModal");
+const modal = document.getElementById("login-modal");
 const loginBtns = document.querySelectorAll(".login-button");
 const signinLink = document.querySelector(".login-btn");
 const signupLink = document.querySelector(".signup-link");
@@ -50,24 +50,23 @@ loginBtns.forEach((btn) => {
   });
 });
 
-signupLink.onclick = function () {
-  console.log("Sign up clicked! Closing modal...");
+function closeModal() {
   modal.style.display = "none";
-  document.body.style.overflow = "auto";
-};
+}
 
-signinLink.onclick = function () {
-  console.log("Sign in clicked! Closing modal...");
-  modal.style.display = "none";
-  document.body.style.overflow = "auto";
-};
+signupLink.addEventListener("click", () => {
+  closeModal();
+});
 
-window.onclick = function (e) {
+signinLink.addEventListener("click", () => {
+  closeModal();
+});
+
+window.addEventListener("click", (e) => {
   if (e.target === modal) {
-    modal.style.display = "none";
-    document.body.style.overflow = "auto";
+    closeModal();
   }
-};
+});
 
 // Shoe Details Tabbed Information Display
 tabs.forEach((tab) => {
