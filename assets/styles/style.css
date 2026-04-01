@@ -1215,9 +1215,30 @@ footer .footer-data {
 }
 
 @media (max-width: 480px) {
+  /* HERO SECTION */
+  .hero-section,
+  .featured-section {
+    text-align: center;
+  }
+
+  .hero-section .update-badge,
+  .featured-section .update-badge {
+    margin-inline: auto;
+  }
+
+  .hero-buttons {
+    justify-content: center;
+  }
+
   /* SHOP SECTION */
   .shop-products {
     grid-template-columns: repeat(1, minmax(0, 1fr));
+  }
+
+  /* FEATURED SECTION */
+  .countdown-grid,
+  .featured-actions {
+    justify-content: center;
   }
 
   /* WHY SECTION */
@@ -1232,5 +1253,14 @@ footer .footer-data {
     button {
       width: 100%;
     }
+  }
+
+  /* FOOTER */
+  footer {
+    text-align: center;
+  }
+
+  .social-apps {
+    justify-content: center;
   }
 }
