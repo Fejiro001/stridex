@@ -191,12 +191,13 @@ hr {
 .info-container nav {
   border-bottom: 1px solid var(--border-color);
   font-family: var(--paragraph-font);
+  margin-bottom: 4rem;
 }
 
 .tab-button {
   background-color: transparent;
   color: var(--text-muted-color);
-  padding: 1.2rem 2.4rem;
+  padding: 1.2rem 2rem;
   font-weight: 500;
   transition: var(--transition);
 }
@@ -207,6 +208,23 @@ hr {
 
 .info-container .active {
   border-bottom: 1px solid var(--primary-color);
+  color: var(--primary-color);
+}
+
+.features-list {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: var(--grid-gap);
+  color: var(--text-muted-color);
+}
+
+.features-list li {
+  display: flex;
+  align-items: baseline;
+  gap: 1rem;
+}
+
+.features-list i {
   color: var(--primary-color);
 }
 
