@@ -7,6 +7,7 @@ const modal = document.getElementById("login-modal");
 const loginBtns = document.querySelectorAll(".login-button");
 const signinLink = document.querySelector(".login-btn");
 const signupLink = document.querySelector(".signup-link");
+const closeBtn = document.getElementById("closeBtn");
 const tabs = document.querySelectorAll(".tab-button");
 const contents = document.querySelectorAll(".tab-content");
 
@@ -59,6 +60,10 @@ signupLink.addEventListener("click", () => {
 });
 
 signinLink.addEventListener("click", () => {
+  closeModal();
+});
+
+closeBtn.addEventListener("click", () => {
   closeModal();
 });
 
