@@ -14,6 +14,8 @@ This a team project aimed at creating a highly responsive website, with some bas
 * 🗺️ Product Overview: A pop-up page that includes further details about the shoe product.
  
 ## Technologies Used
+* Front-end: CSS, HTML5, JavaScript
+* Tools/Services: VS-Code, Gitbash/GitHub
 
 ## Key Implementation Details
 
